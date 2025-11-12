@@ -65,15 +65,19 @@ main {
         border-radius: 15px;
         width: 199px;
         height: 40px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        font-size: 12px;
         gap: 5px;
         padding: 10px 20px;
+        display: grid;
+        grid-template-rows: repeat(2);
+        align-items: center;
         background-color: $secondary-color;
         color: #a0aec0;
         .top-bar__profile__search-icons {
           color: black;
+          align-items: baseline;
+          height: 15px;
+          width: 15px;
         }
       }
 
@@ -86,8 +90,7 @@ main {
         align-items: center;
         &:hover {
           background-color: $primary-color;
-          padding: 2px;
-          border-radius: 50%;
+          border-radius: 50px;
           box-shadow: 0px 4px 6px 0px #00000005;
         }
         .top-bar__profile__icons {

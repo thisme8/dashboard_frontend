@@ -59,16 +59,20 @@ main .top-bar .top-bar__profile .top-bar__profile__search {
   border-radius: 15px;
   width: 199px;
   height: 40px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  font-size: 12px;
   gap: 5px;
   padding: 10px 20px;
+  display: grid;
+  grid-template-rows: repeat(2);
+  align-items: center;
   background-color: white;
   color: #a0aec0;
 }
 main .top-bar .top-bar__profile .top-bar__profile__search .top-bar__profile__search-icons {
   color: black;
+  align-items: baseline;
+  height: 15px;
+  width: 15px;
 }
 main .top-bar .top-bar__profile .top-bar__profile__content {
   color: #718096;
@@ -80,8 +84,7 @@ main .top-bar .top-bar__profile .top-bar__profile__content {
 }
 main .top-bar .top-bar__profile .top-bar__profile__content:hover {
   background-color: #4fd1c5;
-  padding: 2px;
-  border-radius: 50%;
+  border-radius: 50px;
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.0196078431);
 }
 main .top-bar .top-bar__profile .top-bar__profile__content .top-bar__profile__icons {
