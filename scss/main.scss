@@ -90,7 +90,7 @@ main {
     h3 {
       font-size: 12px;
       text-align: justify;
-      font-weight: 500;
+      font-weight: 700;
       color: #2d3748;
     }
 
@@ -105,7 +105,7 @@ main {
     .account-pages__content {
       color: #a0aec0;
       font-size: 12px;
-      font-weight: 500;
+      font-weight: 700;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -136,6 +136,14 @@ main {
     }
   }
 
+  section {
+    p {
+      .docs {
+        font-size: 10px;
+      }
+    }
+  }
+
   .help-card {
     color: $secondary-color;
     background-color: $primary-color;
@@ -145,6 +153,7 @@ main {
     height: 169.5px;
     align-items: start;
     margin-top: 45px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 8.5px;
@@ -176,7 +185,7 @@ main {
       text-align: center;
       box-sizing: border-box;
       font-size: 10px;
-      font-weight: 500;
+      font-weight: 700;
     }
   }
 }
