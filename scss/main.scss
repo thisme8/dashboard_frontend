@@ -94,10 +94,11 @@ main {
         display: flex;
         flex-direction: row;
         align-items: center;
+        border-radius: 50px;
+        padding: 0px 5px 0px 5px;
         &:hover {
-          background-color: $primary-color;
-          border-radius: 50px;
-          padding: 0px 5px 0px 5px;
+          text-decoration: underline $primary-color;
+          color: $primary-color;
           box-shadow: 0px 4px 6px 0px #00000005;
         }
         .top-bar__profile__icons {
@@ -109,145 +110,25 @@ main {
   }
 }
 
-//
 
 /* side-bar */
-.full-sidebar {
+aside {
   position: fixed;
-  box-sizing: content-box;
+  height: 1015px;
+  box-sizing: border-box;
+  margin-top: 44px;
   margin-left: 18px;
   width: 246px;
   z-index: 100;
-  padding: 0px 15px 0px 15px;
-  height: 100%;
-  overflow-y: scroll;
-  top: 44px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-
   header {
-    img {
-      height: auto;
-      width: 83px;
-      top: 0px;
-      right: 17px;
-    }
   }
-
-  hr {
-    height: 8px;
-    width: 0px;
-    background-image: linear-gradient(transparent, #e0e1e2, transparent);
-    border: 0;
-    height: 1px;
-  }
-
   nav {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-
-    h3 {
-      font-size: 12px;
-      text-align: justify;
-      font-weight: 700;
-      color: #2d3748;
+    .dashboard-list {
     }
-
-    .dashboard-list,
     .account-pages {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    .dashboard-list__content,
-    .account-pages__content {
-      color: #a0aec0;
-      font-size: 12px;
-      font-weight: 700;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 8.5px;
-      width: 219px;
-      height: 54px;
-      padding-left: 16px;
-      &:hover {
-        background-color: $secondary-color;
-        border-radius: 12px;
-        box-shadow: 0px 4px 6px 0px #00000005;
-      }
-    }
-
-    .dashboard-list__icon,
-    .account-pages__icon {
-      color: $primary-color;
-      background-color: $secondary-color;
-      border-radius: 12px;
-      padding: 7px;
-      font-size: 15px;
-      box-shadow: 5px;
-
-      &:hover {
-        color: $secondary-color;
-        background-color: $primary-color;
-      }
     }
   }
-
-  section {
-    p {
-      .docs {
-        font-size: 10px;
-      }
-    }
-  }
-
   .help-card {
-    color: $secondary-color;
-    background-color: $primary-color;
-    border-radius: 15px;
-    padding: 16px;
-    width: 218px;
-    height: 170px;
-    align-items: start;
-    margin-top: 45px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-
-    .icon--documentation {
-      font-size: 24px;
-      height: 35px;
-      width: 35px;
-      border-radius: 12px;
-      padding: 7px;
-      color: $primary-color;
-      background-color: $secondary-color;
-      box-shadow: 5px;
-
-      &:hover {
-        color: $secondary-color;
-        background-color: $primary-color;
-      }
-    }
-
-    .help-card__documentation {
-      background-color: $secondary-color;
-      color: black;
-      border-radius: 12px;
-      padding: 0px 8px 0px 8px;
-      width: 186px;
-      height: 35px;
-      line-height: 35px;
-      text-align: center;
-      box-sizing: border-box;
-      font-size: 10px;
-      font-weight: 700;
-    }
   }
 }
 
