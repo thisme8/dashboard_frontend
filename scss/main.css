@@ -194,7 +194,11 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  text-decoration: none;
   gap: 44px;
+}
+.footer .footer__links .footer__links__change {
+  color: inherit;
 }
 .footer .footer__links .footer__links__change:hover {
   color: #4fd1c5;

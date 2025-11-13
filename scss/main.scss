@@ -217,8 +217,10 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    text-decoration: none;
     gap: 44px;
     .footer__links__change {
+      color: inherit;
       &:hover {
         color: $primary-color;
       }
