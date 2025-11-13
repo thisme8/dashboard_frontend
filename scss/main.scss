@@ -110,7 +110,6 @@ main {
   }
 }
 
-
 /* side-bar */
 aside {
   position: fixed;
@@ -123,9 +122,11 @@ aside {
   header {
   }
   nav {
+    .account-pages,
     .dashboard-list {
-    }
-    .account-pages {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
     }
   }
   .help-card {

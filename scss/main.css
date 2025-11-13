@@ -110,6 +110,12 @@ aside {
   width: 246px;
   z-index: 100;
 }
+aside nav .account-pages,
+aside nav .dashboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 /* footer */
 footer {
   bottom: 0;
