@@ -117,6 +117,23 @@ main {
         background-color: $secondary-color;
         border-radius: 12px;
         box-shadow: 0px 3.5px 5.5px 0px #00000005;
+
+        .dashboard-list__icon,
+        .account-pages__icon {
+          color: $secondary-color;
+          background-color: $primary-color;
+        }
+      }
+      &.active {
+        background-color: $secondary-color;
+        border-radius: 12px;
+        box-shadow: 0px 3.5px 5.5px 0px #00000005;
+
+        .dashboard-list__icon,
+        .account-pages__icon {
+          color: $secondary-color;
+          background-color: $primary-color;
+        }
       }
     }
 
@@ -128,11 +145,6 @@ main {
       padding: 7.5px;
       font-size: 15px;
       box-shadow: 5.5px;
-
-      &:hover {
-        color: $secondary-color;
-        background-color: $primary-color;
-      }
     }
   }
 
