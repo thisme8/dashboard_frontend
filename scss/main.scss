@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f9fa;
+  width: 100vw;
+  height: 100vh;
+}
+
+$primary-color: #4fd1c5;
+$secondary-color: white;
+
+/* main section of the page */
+main {
+  display: flex;
+  margin-left: 246px;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+/* for the topbar */
+.top-bar {
+  margin-top: 22.5px;
+  margin-right: 48px;
+  margin-left: 48px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-bar__breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.top-bar__profile {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 18px;
+}
+//
+
+/* side-bar */
+.full-sidebar {
+  position: fixed;
+  box-sizing: content-box;
+  margin-left: 18px;
+  width: 246px;
+  z-index: 100;
+  padding: 0px 15px 0px 15px;
+  height: 100%;
+  top: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  header {
+    img {
+      height: auto;
+      width: 83px;
+      top: 0px;
+      right: 17px;
+    }
+  }
+
+  hr {
+    height: 8px;
+    width: 233px;
+    background-image: linear-gradient(transparent, #e0e1e2, transparent);
+    border: 0;
+    height: 1px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h3 {
+      font-size: 12px;
+      text-align: justify;
+      font-weight: 700;
+      color: #2d3748;
+    }
+
+    .dashboard-list,
+    .account-pages {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .dashboard-list__content,
+    .account-pages__content {
+      color: #a0aec0;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8.5px;
+      width: 219px;
+      height: 54px;
+      padding-left: 16px;
+      &:hover {
+        background-color: $secondary-color;
+        border-radius: 12px;
+        box-shadow: 0px 3.5px 5.5px 0px #00000005;
+
+        .dashboard-list__icon,
+        .account-pages__icon {
+          color: $secondary-color;
+          background-color: $primary-color;
+        }
+      }
+      &.active {
+        background-color: $secondary-color;
+        border-radius: 12px;
+        box-shadow: 0px 3.5px 5.5px 0px #00000005;
+
+        .dashboard-list__icon,
+        .account-pages__icon {
+          color: $secondary-color;
+          background-color: $primary-color;
+        }
+      }
+    }
+
+    .dashboard-list__icon,
+    .account-pages__icon {
+      color: $primary-color;
+      background-color: $secondary-color;
+      border-radius: 12px;
+      padding: 7.5px;
+      font-size: 15px;
+      box-shadow: 5.5px;
+    }
+  }
+
+  section {
+    p {
+      .docs {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .help-card {
+    color: $secondary-color;
+    background-color: $primary-color;
+    border-radius: 15px;
+    padding: 16px;
+    width: 218px;
+    height: 169.5px;
+    align-items: start;
+    margin-top: 45px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 8.5px;
+
+    .icon--documentation {
+      font-size: 24px;
+      height: 35px;
+      width: 35px;
+      border-radius: 12px;
+      padding: 7.5px;
+      color: $primary-color;
+      background-color: $secondary-color;
+      box-shadow: 5.5px;
+
+      &:hover {
+        color: $secondary-color;
+        background-color: $primary-color;
+      }
+    }
+
+    .help-card__documentation {
+      background-color: $secondary-color;
+      color: black;
+      border-radius: 12px;
+      padding: 0px 8px 0px 8px;
+      width: 186px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      box-sizing: border-box;
+      font-size: 10px;
+      font-weight: 700;
+    }
+  }
+}
+
+/* footer */
+footer {
+  bottom: 0;
+  left: 266px;
+  position: fixed;
+  right: 0;
+  z-index: 5;
+  text-align: start;
+  padding: 31px;
+}
