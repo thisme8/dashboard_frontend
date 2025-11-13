@@ -9,18 +9,23 @@
 
 body {
   background-color: #f8f9fa;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100wh;
 }
 
 $primary-color: #4fd1c5;
 $secondary-color: white;
 
+.main-content {
+  text-align: center;
+  min-height: calc(100vh - 74.5px - 41.5px);
+}
+
 /* footer */
 .footer {
-  bottom: 0;
-  left: 266px;
-  position: fixed;
+  margin-left: 266px;
+  height: 18px;
+  position: flow;
   right: 0;
   z-index: 5;
   text-align: start;
@@ -33,19 +38,19 @@ $secondary-color: white;
   justify-content: space-between;
   color: #a0aec0;
 
-  .footer__footer-description {
-    .footer__name {
+  &__description {
+    &__name {
       color: $primary-color;
       font-weight: 500;
     }
   }
-  .footer__links {
+  &__links {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     text-decoration: none;
     gap: 44px;
-    .footer__links__change {
+    &__change {
       color: inherit;
       &:hover {
         color: $primary-color;

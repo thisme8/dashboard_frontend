@@ -9,15 +9,20 @@
 
 body {
   background-color: #f8f9fa;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100wh;
+}
+
+.main-content {
+  text-align: center;
+  min-height: calc(100vh - 74.5px - 41.5px);
 }
 
 /* footer */
 .footer {
-  bottom: 0;
-  left: 266px;
-  position: fixed;
+  margin-left: 266px;
+  height: 18px;
+  position: flow;
   right: 0;
   z-index: 5;
   text-align: start;
@@ -30,20 +35,20 @@ body {
   justify-content: space-between;
   color: #a0aec0;
 }
-.footer .footer__footer-description .footer__name {
+.footer__description__name {
   color: #4fd1c5;
   font-weight: 500;
 }
-.footer .footer__links {
+.footer__links {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   text-decoration: none;
   gap: 44px;
 }
-.footer .footer__links .footer__links__change {
+.footer__links__change {
   color: inherit;
 }
-.footer .footer__links .footer__links__change:hover {
+.footer__links__change:hover {
   color: #4fd1c5;
 }/*# sourceMappingURL=main.css.map */
