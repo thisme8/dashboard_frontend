@@ -111,35 +111,6 @@ main {
 }
 
 /* side-bar */
-aside {
-  position: fixed;
-  height: 1015px;
-  box-sizing: border-box;
-  margin-top: 44px;
-  margin-left: 18px;
-  width: 246px;
-  z-index: 100;
-  header {
-  }
-  nav {
-    .account-pages,
-    .dashboard-list {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-  }
-  .help-card {
-  }
-}
 
 /* footer */
-footer {
-  bottom: 0;
-  left: 266px;
-  position: fixed;
-  right: 0;
-  z-index: 5;
-  text-align: start;
-  padding: 31px;
-}
+

@@ -101,28 +101,4 @@ main .top-bar .top-bar__profile .top-bar__profile__content .top-bar__profile__ic
 }
 
 /* side-bar */
-aside {
-  position: fixed;
-  height: 1015px;
-  box-sizing: border-box;
-  margin-top: 44px;
-  margin-left: 18px;
-  width: 246px;
-  z-index: 100;
-}
-aside nav .account-pages,
-aside nav .dashboard-list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-/* footer */
-footer {
-  bottom: 0;
-  left: 266px;
-  position: fixed;
-  right: 0;
-  z-index: 5;
-  text-align: start;
-  padding: 31px;
-}/*# sourceMappingURL=main.css.map */
+/* footer *//*# sourceMappingURL=main.css.map */
