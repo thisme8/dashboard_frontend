@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard UI</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="scss/main.css" />
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <link
       href="https://fonts.cdnfonts.com/css/helvetica-neue-5"
@@ -21,22 +21,45 @@
     <!-- navbar -->
     <main>
       <nav class="top-bar">
-        <div class="breadcrumb">
-          <p>Page / Dashboard</p>
-          <p>Dashboard</p>
+        <div class="top-bar__breadcrumb">
+          <p>
+            <span class="top-bar__breadcrumb__previous">Page</span> <span class="top-bar__breadcrumb__current">/ Dashboard</span>
+          </p>
+          <p class="top-bar__breadcrumb__active">Dashboard</p>
         </div>
-        <div class="search-bar">
-          <p>Type here...</p>
-        </div>
-        <div class="profile">
-          <p><ion-icon name="person"></ion-icon>Sign in</p>
-          <p><ion-icon name="settings-sharp"></ion-icon></p>
-          <p><ion-icon name="notifications"></ion-icon></p>
+
+        <div class="top-bar__profile">
+          <div class="top-bar__profile__search">
+             <p> 
+            <ion-icon
+              name="search"
+              class="top-bar__profile__search-icons"
+            ></ion-icon>
+          Type Here...
+        </p>
+            </p>
+          </div>
+          <p class="top-bar__profile__content">
+            <ion-icon name="person" class="top-bar__profile__content-icons"> </ion-icon>
+            Sign in
+          </p>
+          <p class="top-bar__profile__content">
+            <ion-icon
+              name="settings-sharp"
+              class="top-bar__profile__content-icons"
+            ></ion-icon>
+          </p>
+          <p class="top-bar__profile__content">
+            <ion-icon
+              name="notifications"
+              class="top-bar__profile__content-icons"
+            ></ion-icon>
+          </p>
         </div>
       </nav>
     </main>
 
-    <!-- sidebar -->
+    sidebar
     <aside>
       <header>
         <h3>Outside</h3>
