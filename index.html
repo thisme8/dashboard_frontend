@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard UI</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="scss/main.css" />
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <link
       href="https://fonts.cdnfonts.com/css/helvetica-neue-5"
@@ -20,7 +20,7 @@
   <body>
     <!-- navbar -->
     <main>
-      <nav class="top-bar">
+      <nav class="top-bar" id="top-bar">
         <div class="breadcrumb">
           <p>Page / Dashboard</p>
           <p>Dashboard</p>
@@ -63,9 +63,23 @@
       <section class="help-card"></section>
     </aside>
 
+    <article class="main-content">
+    </article>
+
     <!-- footer -->
-    <footer>
-      @ 2021, Made with ❤️ by Creative Tim & Simmmple for a better web
+    <footer class="footer">
+      <section class="footer__description">
+        @ 2021, Made with ❤️ by
+        <span class="footer__description__name">Creative Tim</span> &
+        <span class="footer__description__name">Simmmple</span> for a better web
+      </section>
+
+      <section class="footer__links">
+        <a class="footer__links__change" href="#top-bar">Creative Tim</a>
+        <a class="footer__links__change" href="#top-bar">Simmmple</a>
+        <a class="footer__links__change" href="#top-bar">Blog</a>
+        <a class="footer__links__change" href="#top-bar">License</a>
+      </section>
     </footer>
 
     <script
