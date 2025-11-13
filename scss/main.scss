@@ -41,19 +41,19 @@ main {
       gap: 6px;
       padding-top: 9px;
 
-      .top-bar__breadcrumb_previous {
+      .top-bar__breadcrumb__previous {
         color: #a0aec0;
         font-weight: 400;
         font-size: 12px;
       }
 
-      .top-bar__breadcrumb_current {
+      .top-bar__breadcrumb__current {
         color: #000000;
         font-weight: 400;
         font-size: 12px;
       }
 
-      .top-bar__breadcrumb_active {
+      .top-bar__breadcrumb__active {
         color: #2d3748;
         font-weight: 700;
         font-size: 14px;
